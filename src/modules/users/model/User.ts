@@ -1,24 +1,24 @@
 import { v4 as uuidV4 } from "uuid";
 
 class User {
-    id: string;
+  id: string;
 
-    admin: boolean;
+  admin: boolean;
 
-    name: string;
+  name: string;
 
-    email: string;
+  email: string;
 
-    created_at: Date;
+  created_at: Date;
 
-    updated_at: Date;
+  updated_at: Date;
 
-    constructor() {
-        if (!this.id) {
-            this.id = uuidV4();
-        }
-        this.admin = false;
+  constructor() {
+    if (!this.id) {
+      this.id = uuidV4();
     }
+    this.admin = false;
+  }
 }
 
 export default User;
